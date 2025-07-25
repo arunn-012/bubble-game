@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+#main {
+    width: 100%;
+    height: 100%;
+background: linear-gradient(135deg, #b0e0df 0%, #d4d5f4 50%, #f4c6e2 100%);
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#panel {
+    width: 67%;
+    height: 82%;
+    border-radius: 10px;
+    overflow: hidden;
+    /* background-color: #b0e0df; */
+
+}
+#ptop{
+    width: 100%;
+    height: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1.5vw;
+    padding: 0 7vw;
+     box-shadow: inset 0 6px 12px rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+.elem{
+    width: 20%;
+    padding: .7vw 1vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 2vw; */
+    border-radius: 1vw;
+     box-shadow: inset 0 6px 12px rgba(255, 255, 255, 0.3);
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+
+}
+.elem h3{
+    color: #fff;
+     text-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.5),
+    0 0 8px rgba(255, 255, 255, 0.5);
+    font-size: 1.5vw;
+}
+.elem .Num{
+     background-color: #f0f8ff; 
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: .5rem 1.3vw;
+    border-radius: 1vw;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      color: #2db6a2;
+}
+#pbtm{
+    padding-top: 2vw;
+    padding-left: 1.3vw;
+    /* background-color: blue; */
+    width: 100%;
+    height: calc(100% - 17%);
+    display: flex;
+    flex-wrap: wrap;
+    gap : 1vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vw;
+     color: white;
+
+
+}
+.bubble{
+    width: 7vh;
+    height: 7vh;
+    font-size: 2vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 30% 30%, #c0ffc0, #28a745);
+  box-shadow:
+    inset 5px 5px 12px rgba(255, 255, 255, 0.4), /* top-left glow */
+    inset -5px -5px 8px rgba(0, 0, 0, 0.2),       /* bottom-right dark edge */
+    0 6px 12px rgba(0, 0, 0, 0.25);  
+    cursor: pointer;
+}
+.bubble:hover{
+    transform: scale(1.15);
+  box-shadow:
+    0 0 15px rgba(0, 255, 255, 0.6),
+    0 0 30px rgba(0, 255, 255, 0.4),
+    inset 0 0 5px rgba(255, 255, 255, 0.6);
+  background: radial-gradient(circle at 25% 25%, #e6fff9, #1abc9c);
+}
+@media (max-width: 768px) {
+
+    #panel {
+    width: 90%;
+    height: 82%;
+    border-radius: 10px;
+    overflow: hidden;
+    /* background-color: #e0bbb0; */
+    padding-top: 1vw;
+
+}
+#ptop{
+    width: 100%;
+    height: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1.5vw;
+    padding: 0 7vw;
+     box-shadow: none;
+  background:none;
+  backdrop-filter: none;
+  border-radius: none;
+}
+.elem{
+    width: 20%;
+    padding: 1.5vw 11vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    /* gap: 2vw; */
+    border-radius: 1vw;
+     box-shadow: inset 0 6px 12px rgba(255, 255, 255, 0.3);
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+
+}
+.elem h3{
+    color: #fff;
+     text-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.5),
+    0 0 8px rgba(255, 255, 255, 0.5);
+    font-size: 5vw;
+}
+.elem .Num{
+     background-color: transparent;  
+    font-size: 7vw;
+    font-weight: bold;
+    padding: .5rem 1vw;
+    border-radius: 1vw;
+      box-shadow:none;
+      color: #2db6a2;
+}
+#pbtm{
+    padding-top: 5vw;
+    padding-left: 1.3vw;
+    padding-bottom: 5vw;
+    /* background-color: blue; */
+    width: 100%;
+    height: calc(100% - 17%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw;
+    gap : 2vw;
+
+}
+.bubble{
+   margin-bottom: .1vw;
+    width: 6vh;
+    height: 6vh;
+    font-size: 7vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 30% 30%, #c0ffc0, #28a745);
+  box-shadow:
+    inset 5px 5px 12px rgba(255, 255, 255, 0.4), /* top-left glow */
+    inset -5px -5px 8px rgba(0, 0, 0, 0.2),       /* bottom-right dark edge */
+    0 6px 12px rgba(0, 0, 0, 0.25);  
+    cursor: pointer;
+ font: 800;
+}
+}
